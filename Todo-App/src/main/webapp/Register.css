@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* Page background and typography */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #D4F1F4;
+}
+
+/* Header styling */
+header {
+    background-color: #05445E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Center the form vertically and horizontally */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Form container */
+form {
+    background-color: #189AB4;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    color: white;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form heading */
+form h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #05445E;
+}
+
+/* Labels and inputs */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #05445E;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border: 2px solid #75E6DA;
+}
+
+/* Submit button */
+input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #05445E;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #032d3c;
+}
+
+/* Error message */
+.error-msg {
+    color: #ff4444;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Link below form */
+.register-link {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.register-link a {
+    color: #75E6DA;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.register-link a:hover {
+    background-color: #05445E;
+    color: #D4F1F4;
+}

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #D4F1F4;
+}
+
+/* header styling */
+header {
+    background-color: #05445E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* center the form nicely */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* form container */
+form {
+    background-color: #189AB4;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* form heading */
+form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #05445E;
+}
+
+/* labels */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* text fields, textarea, and date input */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #05445E;
+    background-color: #ffffff;
+    resize: vertical;
+    min-height: 40px;   /* for date input, slightly smaller height */
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+/* keep textarea larger specifically */
+textarea {
+    min-height: 80px;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #75E6DA;
+}
+
+/* submit button */
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #05445E;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #032d3c;
+}
+
+

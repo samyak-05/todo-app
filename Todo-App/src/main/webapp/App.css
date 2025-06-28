@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/* Reset body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #D4F1F4;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #05445E;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    height: 70px;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.app-title {
+    margin: 0;
+}
+
+.uname {
+    text-transform: uppercase;
+}
+
+/* Logout button styling */
+.Logout {
+    margin: 0;
+    padding: 8px 16px;
+    background-color: #75E6DA;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Logout:hover {
+    background-color: #032d3c;
+}
+
+/* Main section */
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Todo list section */
+.todo-list {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #05445E;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Add button styling */
+.add-btn {
+    display: inline-block;
+    background-color: #75E6DA;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #032d3c;
+}
+
+/* Action buttons inside table */
+.delete-btn, .edit-btn {
+    background-color: #189AB4;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.edit-btn:hover {
+    background-color: #388e3c;
+}
+
+/* Responsive table text size */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 14px;
+    }
+}
